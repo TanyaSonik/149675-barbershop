@@ -36,7 +36,6 @@
         </div>
     </header>
 
-
     <main class="container">
         <h1> Средства для ухода</h1>
         <ul class="breadcrumbs">
@@ -47,7 +46,6 @@
             <li class="current"><a>Средства для ухода</a>
             </li>
         </ul>
-
 
         <div class="catalog">
 
@@ -88,24 +86,22 @@
 
                     </fieldset>
 
-
-
                     <fieldset class="product">
 
                         <legend>Группы товаров:</legend>
                         <div>
                             <input type="radio" name="product1" value="Shaving accessories">
-                            <label>Бритвенные принадлежности</label>
+                            <label for="product1">Бритвенные принадлежности</label>
                         </div>
 
                         <div>
                             <input type="radio" name="product2" value="mr natty" checked>
-                            <label>Средства для ухода</label>
+                            <label for="product2">Средства для ухода</label>
                         </div>
 
                         <div>
                             <input type="radio" name="product3" value="accessories">
-                            <label>Аксессуары</label>
+                            <label for="product3">Аксессуары</label>
                         </div>
 
                     </fieldset>
@@ -113,19 +109,19 @@
                 </form>
             </section>
 
-
             <section class="item cards">
                 <article>
 
-                    <h2><a href="catalog-item.html"><img src="img-catalog/item-1.jpg" width="220" height="165" alt="Набор для путешествий BAXTER OF CALIFORNIA"></a>
-                       <p>Набор для путешествий "BAXTER OF CALIFORNIA"</p></h2>
+                    <a href="catalog-item.html">
+                        <img src="img-catalog/item-1.jpg" width="220" height="165" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+                    </a>
+                    <h2>Набор для путешествий "BAXTER OF CALIFORNIA"</h2>
 
                     <div>
                         <span> 2900 РУБ.</span>
-                        <a class="btn" href="#">Купить</a>
+                        <h2><a class="btn" href="#">Купить</a></h2>
                     </div>
                 </article>
-
 
                 <article>
 
@@ -177,45 +173,40 @@
                 <article>
                     <h2><a href="catalog-item.html"><img src="img-catalog/item-6.jpg"  width="220" height="165" alt="Набор для бритья BAXTER OF CALIFORNIA"></a>
                        <p>Набор для бритья "BAXTER OF CALIFORNIA"</p></h2>
-
                     <div>
                         <span> 3900 РУБ.</span>
                         <a class="btn" href="#">Купить</a>
                     </div>
                 </article>
-
-
             </section>
 
             <div class="paginator">
                 <a class="page">1</a>
-                <a class="page">2</a>
+                <a class="page current">2</a>
                 <a class="page">3</a>
                 <a class="page">4</a>
             </div>
 
         </div>
     </main>
-
-
-    <footer class="footer-copyright">
-        <div>
+    <footer class="main-footer">
+        <div class="container">
             <section class="footer-contacts">
-                Барбершоп "Бородинский"
-                <br>Адрес: г. Санкт- Петербург, Б. Конюшенная, д. 19/8
+                Барбершоп «Бородинский»
+                <br>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
                 <br>
                 <a href="#">Как нас найти?</a>
-                <br>Телефон: +7(812)666-02-66
+                <br>Телефон: +7 (812) 666-02-66
             </section>
             <section class="footer-social">
                 <p>Давайте дружить!</p>
-                <a class=" social-btn social-btn-vk" href="#">Вконтакте</a>
-                <a class=" social-btn social-btn-fb" href="#">Фэйсбук</a>
-                <a class=" social-btn social-btn-inst" href="#">Инстаграм</a>
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </section>
             <section class="footer-copyright">
-                <p>Разработано</p>
-                <a class="btn" href="httpc://htmlacademy.ru">HTML Academy</a>
+                <p>Разработано:</p>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
             </section>
         </div>
     </footer>
