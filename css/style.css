@@ -1,0 +1,44 @@
+body {
+  background-image: url("/img/body-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+h1 {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+}
+.index-content {
+  height: 419px;
+  width: 940px;
+  background: url("/img/news-bg.jpg");
+}
+/*main {
+  height: 901px;
+  width: 1200px;
+  background: url("/img/news-bg.jpg");
+}*/
+.catalog {
+  height: 912px;
+  width: 1200px;
+  background: url("/img/news-bg.jpg");
+}
