@@ -83,6 +83,14 @@ h2 {
 .main-navigation a:hover {
   background: #242424;
 }
+/*
+
+li .current{
+       box-shadow: inset 0 -5px 0 0 #ffffff;
+
+}
+*/
+
 .user-block {
   float: right;
   max-width: 140px;
@@ -109,9 +117,8 @@ h2 {
   left: 20px;
   width: 18px;
   height: 18px;
-
   background: url("../img/icon/spritesheet.png") no-repeat;
-  background-position:  -150px -14px;
+  background-position: -150px -14px;
   opacity: 0.3;
 }
 .login:hover::before {
@@ -441,9 +448,11 @@ h2 {
   text-decoration: none;
   display: block;
   padding: 25px 20px;
+  padding-left: 0;
 }
 .breadcrumbs {
   font-size: 0;
+  padding-left: 0;
 }
 .breadcrumbs .current {
   color: #aba9a7;
@@ -453,7 +462,7 @@ h2 {
   color: black;
 }
 .select h1 {
-  width: 550px;
+  width: 630px;
   margin: 0;
 }
 .breadcrumbs {
@@ -464,11 +473,11 @@ h2 {
   box-sizing: border-box;
   min-height: 680px;
   color: black;
-/*  background: #f8f5f2 url("../img/news-bg.jpg");*/
+  /*  background: #f8f5f2 url("../img/news-bg.jpg");*/
 }
 .select {
   min-height: 68px;
-  /*margin-bottom: 55px;*/
+  margin-bottom: 55px;
 }
 .filters {
   float: left;
@@ -479,7 +488,6 @@ h2 {
   float: right;
   width: 730px;
   min-height: 622px;
-  
   color: black;
 }
 .paginator {
@@ -489,7 +497,7 @@ h2 {
   height: 45px;
   margin: 0;
   color: #000000;
-    margin-bottom: 45px;
+  margin-bottom: 45px;
   outline: 1px solid rgba(244, 234, 5, 0.8);
   box-shadow: inset 0 0 40px rgba(244, 234, 5, 0.8);
 }
@@ -497,13 +505,10 @@ h2 {
   padding: 10px 10px;
   color: black;
   text-decoration: none;
-    
 }
-
-
 .page {
-    font-size: 14px;
-    margin-right: 7px;
+  font-size: 14px;
+  margin-right: 7px;
 }
 /*
 .paginator a {
@@ -535,64 +540,42 @@ label {
 .producer input {
   margin-right: 10px;
 }
-
-
-
-
-
 .items article {
   background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    font-size: 14px;
-    margin-bottom: 15px;
-    margin-right: 15px;
-    padding-bottom: 15px;
-    vertical-align: top;
-    width: 220px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  padding-bottom: 15px;
+  vertical-align: top;
+  width: 220px;
 }
-.items article :ntn-shild (3n) {
+.items article:ntn-shild (3n) {
   margin-right: 0;
 }
-
-article a{
- 
+article a {
   display: inline-block;
-        color: #000000;
-    font-size: 14px;
-    padding-left: 20px;
+  color: #000000;
+  font-size: 14px;
+  padding-left: 20px;
 }
-
 .purchase {
-/*  padding: 0 20px 20px 20px;*/
-    background-color: #e5e5e5;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: center;
+  /*  padding: 0 20px 20px 20px;*/
+  background-color: #e5e5e5;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
 }
-
 .purchase .btn {
-    margin-right: 0;
- 
-   
+  margin-right: 0;
 }
+/*страница товара*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.item-page {
+  background: #f8f5f2 url("../img/news-bg.jpg");
+  color: black;
+}
 .all-photos {
   float: left;
   width: 460px;
@@ -605,13 +588,18 @@ article a{
   min-height: 670px;
   color: #000000;
 }
+.main-photo {
+  width: 460px;
+  height: 498px;
+  margin-bottom: 21px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 .other-photo img {
   float: left;
   width: 140px;
   height: 149px;
   margin-right: 20px;
-  outline: 1px solid rgba(244, 234, 5, 0.8);
-  box-shadow: inset 0 0 40px rgba(244, 234, 5, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .other-photo img:last-child {
   margin-right: 0;
@@ -619,10 +607,62 @@ article a{
 .center {
   text-align: center;
 }
-
 article h2 {
-
   display: inline-block;
-    margin: 0 0 16px 0;
-    padding: 0;
+  margin: 0 0 16px 0;
+  padding: 0;
 }
+.information {
+  width: 390px;
+  padding: 0;
+}
+.article {
+  color: #b3b3b3;
+  float: right;
+}
+.description li::before {
+  background-color: #000;
+  content: "";
+  height: 8px;
+  left: 0;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 8px;
+}
+.description li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+  list-style: none;
+}
+.description ul {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.item-nav {
+  margin-left: 0;
+  padding-left: 0px;
+}
+.item-nav a {
+  padding-left: 0px;
+}
+.item-nav li::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 8px;
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  transform: rotate(45deg);
+  width: 8px;
+}
+  .item-nav li {
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 20px;
+    position: relative;
+    vertical-align: middle;
+  }
