@@ -52,59 +52,68 @@
           <a href="catalog.html">Магазин</a>
         </li>
         <li class="current">
-          <a>Средства для ухода</a>
+          <a class="current">Средства для ухода</a>
         </li>
       </ul>
     </div>
     <div class="catalog clearfix">
 
-      <section class="filters ">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="producer">
-            <legend>Производители:</legend>
-            <div>
-              <input type="checkbox" name="producer1" id="producer1" checked>
-              <label for="producer1">BAXTER OF CALIFORNIA</label>
-            </div>
-            <div>
-              <input type="checkbox" name="producer2" id="producer2">
-              <label for="producer2">MR NATTY</label>
-            </div>
-            <div>
-              <input type="checkbox" name="producer3" id="producer3" checked>
-              <label for="producer3">SUAVECITO</label>
-            </div>
-            <div>
-              <input type="checkbox" name="producer4" id="producer4">
-              <label for="producer4">MALIN+GOETZ</label>
-            </div>
-            <div>
-              <input type="checkbox" name="producer5" id="producer5">
-              <label for="producer5">MURRAY'S</label>
-            </div>
-            <div>
-              <input type="checkbox" name="producer6" id="producer6" checked>
-              <label for="producer6">AMERICAN CREW</label>
-            </div>
-          </fieldset>
-          <fieldset class="product">
-            <legend>Группы товаров:</legend>
-            <div>
-              <input type="radio" name="product1" value="Shaving accessories" id="product1">
-              <label for="product1">Бритвенные принадлежности</label>
-            </div>
-            <div>
-              <input type="radio" name="product2" value="mr natty" id="product2" checked>
-              <label for="product2">Средства для ухода</label>
-            </div>
-            <div>
-              <input type="radio" name="product3" value="accessories" id="product3">
-              <label for="product3">Аксессуары</label>
-            </div>
-          </fieldset>
-          <button class="btn" type="submit">Показать</button>
-        </form>
-      </section>
+      	<section class="filters ">
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset class="producer">
+						<legend>Производители:</legend>
+						<div>
+							<input type="checkbox" name="producer1" id="producer1" checked>
+							<label for="producer1" class="pseudo check"></label>
+							<label for="producer1">BAXTER OF CALIFORNIA</label>
+						</div>
+						<div>
+							<input type="checkbox" name="producer2" id="producer2">
+							<label for="producer2" class="pseudo check"></label>
+							<label for="producer2">MR NATTY</label>
+						</div>
+						<div>
+							<input type="checkbox" name="producer3" id="producer3" checked>
+							<label for="producer3" class="pseudo check"></label>
+							<label for="producer3">SUAVECITO</label>
+						</div>
+						<div>
+							<input type="checkbox" name="producer4" id="producer4">
+							<label for="producer4" class="pseudo check"></label>
+							<label for="producer4">MALIN+GOETZ</label>
+						</div>
+						<div>
+							<input type="checkbox" name="producer5" id="producer5">
+							<label for="producer5" class="pseudo check"></label>
+							<label for="producer5">MURRAY'S</label>
+						</div>
+						<div>
+							<input type="checkbox" name="producer6" id="producer6" checked>
+							<label for="producer6" class="pseudo check"></label>
+							<label for="producer6">AMERICAN CREW</label>
+						</div>
+					</fieldset>
+					<fieldset class="product">
+						<legend>Группы товаров:</legend>
+						<div>
+							<input type="radio" name="group-product" value="Shaving accessories" id="product1">
+							<label for="product1" class="pseudo radio"></label>
+							<label for="product1">Бритвенные принадлежности</label>
+						</div>
+						<div>
+							<input type="radio" name="group-product" value="mr natty" id="product2" checked>
+							<label for="product2" class="pseudo radio"></label>
+							<label for="product2">Средства для ухода</label>
+						</div>
+						<div>
+							<input type="radio" name="group-product" value="accessories" id="product3">
+							<label for="product3" class="pseudo radio"></label>
+							<label for="product3">Аксессуары</label>
+						</div>
+					</fieldset>
+					<button class="btn" type="submit">Показать</button>
+				</form>
+			</section>
       <section class="cards">
         <div class="items">
           <article>
